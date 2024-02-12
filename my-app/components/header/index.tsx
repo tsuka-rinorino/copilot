@@ -11,7 +11,7 @@ const navItems: NavItem[] = [
   { title: "Contact", href: "/contact" },
 ];
 
-export const Header: React.FC = () => {
+export const Header = React.memo(() => {
   return (
     <header>
       <h1>Header</h1>
@@ -26,4 +26,4 @@ export const Header: React.FC = () => {
       </nav>
     </header>
   );
-};
+});
