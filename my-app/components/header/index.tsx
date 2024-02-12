@@ -4,7 +4,8 @@ import React from "react";
 
 // ナビゲーションの定数
 // title href
-const navItems = [
+type NavItem = { title: string; href: string };
+const navItems: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
   { title: "Contact", href: "/contact" },
